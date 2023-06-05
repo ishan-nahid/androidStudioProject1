@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Welcome_page">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="423dp"
+        android:layout_gravity="top"
+        app:srcCompat="@drawable/diu_logo" />
+
+    <TextView
+        android:id="@+id/welcomePageTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Lab Project"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:onClick="Proceed"/>
+</LinearLayout>

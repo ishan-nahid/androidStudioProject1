@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginLeft="15sp"
+    android:layout_marginRight="15sp"
+    android:layout_marginTop="15sp"
+    tools:context=".Currency_Converter">
+
+    <EditText
+        android:id="@+id/moneyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:hint="Enter Amount"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/usd2BdtBtnID"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$ -> ৳"
+            android:textSize="15sp"
+            android:layout_marginRight="5sp"
+            android:onClick="convertFunction"/>
+        <Button
+            android:id="@+id/euro2BdtBtnID"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="€-> ৳"
+            android:textSize="15sp"
+            android:layout_marginRight="5sp"
+            android:onClick="convertFunction"/>
+        <Button
+            android:id="@+id/ruble2BdtBtnID"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="₽-> ৳"
+            android:textSize="15sp"
+            android:onClick="convertFunction"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/Bdt2UsdBtnID"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="৳ -> $"
+            android:textSize="15sp"
+            android:layout_marginRight="5sp"
+            android:onClick="convertFunction"/>
+        <Button
+            android:id="@+id/Bdt2euroBtnID"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="৳ -> €"
+            android:textSize="15sp"
+            android:layout_marginRight="5sp"
+            android:onClick="convertFunction"/>
+        <Button
+            android:id="@+id/Bdt2rubleBtnID"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="৳ -> ₽"
+            android:textSize="15sp"
+            android:onClick="convertFunction"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/convertedMoneyId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="45sp"/>
+
+    <Button
+        android:id="@+id/converter2Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Home"
+        android:textSize="15sp"
+        android:gravity="center"/>
+
+</LinearLayout>

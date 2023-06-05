@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab_Project</string>
+    <string-array name="SpinnerArray">
+        <item></item>
+        <item>Guess The Number</item>
+        <item>Matrix Calculator</item>
+        <item>Finance</item>
+        <item>Currency Converter</item>
+        <item>Accounting</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
